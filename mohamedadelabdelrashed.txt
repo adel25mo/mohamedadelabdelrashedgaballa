@@ -1,1 +1,84 @@
 my name mohamed adel abd elrashed.
+
+1-Create a new project on your local machine then push it to your remote repo.
+make folder
+git init
+making any file
+git status
+git add .
+git commit -m ""
+(making a new  in github)
+git remote add origin https://github.com.........
+git push origin master
+
+2-create two branches (one and two) then create two files in one
+branch and push this changes to remote 
+git branch one
+git branch two
+git checkout one
+touch one-1
+touch one-2
+git status 
+
+git add one-1 one-2
+git commit -m "adding two files to one branch"
+git push origin one
+
+3-merge this changes on main branch and then push it to your
+remote main branch.
+
+you can merge from github
+ (Able to merge. These branches can be automatically merged.)
+
+or you can use
+
+git checkout master
+git merge one
+git push origin master
+
+4-Tell me how to remove them locally and remotly.
+// delete branch locally
+git branch -d one
+// delete branch remotely
+git push origin --delete one
+ and soon two
+
+5-create an annoted tag with tagname v1.4.
+git tag -a v1.4  -m "version v1.4"
+to show it 
+git show v1.4
+
+6-push it to remote server
+git push origin v1.4
+
+7-tell me how to list tags locally.
+ git tag
+with extensive description 
+ git tag -n
+
+8-tell me how to delete tag locally and remotely.
+To delete a remote tag
+git push origin --delete v1.4
+
+To delete a local tag
+git tag -d v1.4
+
+9-What is git rebase? Give me an example.
+Rebasing is the process of moving or combining a sequence of commits to a new base commit. 
+Rebasing is most useful and easily visualized in the context of a feature branching workflow
+Rebasing is a common way to integrate upstream changes into your local repository.
+Pulling in upstream changes with Git merge results in a superfluous merge commit every time you want to see how the project has progressed.
+(git rebase) Git rebase in standard mode will automatically take the commits in your current working branch and apply them to the head of the passed branch
+
+10-pull requeset
+
+*when you fork repo you need to pull request to get previllages from the developers they have the main repo till you can pull new updates 
+from upstream proj and when you have the pull request you can push you editting in local and remotey in your account not in the origin repo
+
+*when you work with developers in project remotely and you want to make some changes in origin code you pull request and team members can review your code and accept it from compare and pull request and resolve any conflict
+ “pull request” button that leads to a form asking you to specify which branch you want to merge into the official repository
+
+Readme file in my repo with requird structure and image 
+
+
+
